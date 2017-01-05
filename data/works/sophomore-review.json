@@ -1,0 +1,95 @@
+{
+  "id": 1,
+  "name": "Sophomore Review Portfolio",
+  "description": "<p>The sophomore review portfolio is a collection of work you should have completed for courses that are typically taken by the end of the sophomore year.</p>",
+  "workGroups": [
+    {
+      "order": 1,
+      "name": "At least two studio art samples",
+      "description": "Provide at least two work samples you completed during ART-1110, ART-1230, and/or ART-2230.",
+      "numRequired": 2,
+      "numProvided": 1,
+      "isRequired": true,
+      "status": "in-progress",
+      "works": [
+        {
+          "id": 0,
+          "title": "Sample Title 3",
+          "date-created": "2016-12-25",
+          "image": {
+              "url": "images/sample-1.png",
+              "caption": "Image 3"
+          },
+          "tags": [
+            {
+              "name": "Charcoal"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 2,
+      "name": "At least two software skills samples",
+      "description": "Provide at least two work samples you completed during VCD-1100 and/or VCD-1150.",
+      "numRequired": 2,
+      "numProvided": 2,
+      "isRequired": true,
+      "status": "complete",
+      "works": [
+        {
+          "id": 1,
+          "title": "Sample Title 1",
+          "date-created": "2016-12-25",
+          "image": {
+            "url": "images/sample-1.png",
+            "caption": "Image 1"
+          },
+          "tags": [
+            {
+              "name": "Illustrator"
+            },{
+              "name": "Branding"
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "title": "Sample Title 2",
+          "date-created": "2016-12-25",
+          "image": {
+            "url": "images/sample-2.png",
+            "caption": "Image 2"
+          },
+          "tags": [
+            {
+              "name": "Photoshop"
+            },{
+              "name": "Advertising"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "name": "At least two other coursework samples",
+      "description": "Provide at least two samples of your work from other classes you've taken in this program to date such as from VCD-2200 Typography, VCD-2400 Graphic Design I, or VCD-2600 Web Design I.",
+      "numRequired": 2,
+      "numProvided": 0,
+      "isRequired": true,
+      "status": "not-started",
+      "works": []
+    },
+    {
+      "order": 4,
+      "name": "Other work",
+      "description": "Provide other work samples that evidence skills relevant to this major.",
+      "numRequired": 0,
+      "numProvided": 0,
+      "isRequired": false,
+      "status": "complete",
+      "works": []
+    }
+  ]
+}

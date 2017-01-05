@@ -1,0 +1,24 @@
+{
+  "title": "Sample Title 1",
+  "date-created": "2016-12-25",
+  "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia, dolor vitae tincidunt bibendum, leo odio ullamcorper magna, in fermentum ipsum mi nec magna. Maecenas lacinia orci ut urna tristique, vitae malesuada augue accumsan. Curabitur ac augue sem. Pellentesque faucibus placerat placerat.</p><p>Fusce ut ipsum sapien. Cras libero sapien, auctor eu faucibus et, sodales in ipsum. In tincidunt orci urna, id volutpat turpis sagittis non. Vivamus egestas varius felis, vel placerat ante sagittis non. Cras quis sem eget quam iaculis aliquet nec quis enim. Vestibulum et odio nec felis viverra tristique vel ac ex. </p>"
+  "images": [
+    {
+      "url": "images/sample-1.png",
+      "caption": "Image 1"
+    },{
+      "url": "images/sample-1b.png",
+      "caption": "Image 2"
+    },{
+      "url": "images/sample-1c.png",
+      "caption": "Image 3"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Illustrator"
+    },{
+      "name": "Branding"
+    }
+  ]
+}

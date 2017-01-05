@@ -1,0 +1,50 @@
+{
+  "collectionGroups": [
+    {
+      "name": "My Collections",
+      "collections": [
+        {
+          "name": "Internship Portfolio",
+          "id": "0"
+        },{
+          "name": "Mock Inteview Portfolio",
+          "id": "0"
+        }
+      ]
+    },{
+      "name": "Course Collections",
+      "collections": [
+        {
+          "name": "VCD-1100 Digital Image/Photoshop",
+          "id": "0"
+        },{
+          "name": "VCD-2200 Typography",
+          "id": "0"
+        },{
+          "name": "VCD-2400 Graphic Design I",
+          "id": "0"
+        },{
+          "name": "VCD-2600 Web Design I",
+          "id": "0"
+        },{
+          "name": "VCD-3400 Graphic Design II",
+          "id": "0"
+        }
+      ]
+    },{
+      "name": "Program Collections",
+      "collections": [
+        {
+          "name": "Sophomore Review",
+          "id": "1"
+        },{
+          "name": "Junior Pre-internship Portfolio",
+          "id": "0"
+        },{
+          "name": "Senior Show",
+          "id": "0"
+        }
+      ]
+    }
+  ]
+}

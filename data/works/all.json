@@ -1,0 +1,120 @@
+{
+  "works": [
+    {
+      "id": 1,
+      "title": "Sample Title 1",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-1.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Illustrator"
+        },{
+          "name": "Branding"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Sample Title 2",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-2.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Photoshop"
+        },{
+          "name": "Advertising"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Sample Title 3",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-1.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Charcoal"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Sample Title 4",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-4.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Charcoal"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Sample Title 5",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-5.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Charcoal"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Sample Title 6",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-6.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Charcoal"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Sample Title 7",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-7.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Charcoal"
+        }
+      ]
+    },
+    {
+      "id": 0,
+      "title": "Sample Title 8",
+      "date-created": "2016-12-25",
+      "image": {
+        "url": "images/sample-8.png",
+        "caption": "Image 1"
+      },
+      "tags": [
+        {
+          "name": "Charcoal"
+        }
+      ]
+    }
+  ]
+}
