@@ -5,116 +5,136 @@
       "title": "Sample Title 1",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-1.png",
+        "url": "images/img-1.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Illustrator"
-        },{
-          "name": "Branding"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     },
     {
       "id": 0,
       "title": "Sample Title 2",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-2.png",
+        "url": "images/img-2.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Photoshop"
-        },{
-          "name": "Advertising"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     },
     {
       "id": 0,
       "title": "Sample Title 3",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-1.png",
+        "url": "images/img-3.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Charcoal"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     },
     {
       "id": 0,
       "title": "Sample Title 4",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-4.png",
+        "url": "images/img-4.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Charcoal"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     },
     {
       "id": 0,
       "title": "Sample Title 5",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-5.png",
+        "url": "images/img-5.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Charcoal"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     },
     {
       "id": 0,
       "title": "Sample Title 6",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-6.png",
+        "url": "images/img-6.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Charcoal"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     },
     {
       "id": 0,
       "title": "Sample Title 7",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-7.png",
+        "url": "images/img-7.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Charcoal"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     },
     {
       "id": 0,
       "title": "Sample Title 8",
       "date-created": "2016-12-25",
       "image": {
-        "url": "images/sample-8.png",
+        "url": "images/img-8.png",
         "caption": "Image 1"
       },
-      "tags": [
-        {
-          "name": "Charcoal"
-        }
-      ]
+      "status": {
+        "label": "Unreviewed",
+        "class": "unreviewed"
+      },
+      "comments": {
+        "numUnread": 2,
+        "class": "unread"
+      }
     }
   ]
 }

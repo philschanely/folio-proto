@@ -1,8 +1,8 @@
 {
   "id": 1,
   "name": "Sophomore Review Portfolio",
-  "description": "<p>The sophomore review portfolio is a collection of work you should have completed for courses that are typically taken by the end of the sophomore year.</p>",
-  "workGroups": [
+  "description": "The sophomore review portfolio is a collection of work students should have completed for courses that they typically take by the end of the sophomore year. Faculty review this portfolio to ensure the student progressing as expected.",
+  "categories": [
     {
       "order": 1,
       "name": "At least two studio art samples",
@@ -10,21 +10,27 @@
       "numRequired": 2,
       "numProvided": 1,
       "isRequired": true,
-      "status": "in-progress",
+      "status": {
+        "class": "in-progress",
+        "percentage": 50
+      },
       "works": [
         {
           "id": 0,
           "title": "Sample Title 3",
           "date-created": "2016-12-25",
           "image": {
-              "url": "images/sample-1.png",
+              "url": "images/img-3.png",
               "caption": "Image 3"
           },
-          "tags": [
-            {
-              "name": "Charcoal"
-            }
-          ]
+          "status": {
+            "label": "Unreviewed",
+            "class": "unreviewed"
+          },
+          "comments": {
+            "numUnread": 0,
+            "class": "ok"
+          }
         }
       ]
     },
@@ -35,39 +41,44 @@
       "numRequired": 2,
       "numProvided": 2,
       "isRequired": true,
-      "status": "complete",
+      "status": {
+        "class": "complete",
+        "percentage": 100
+      },
       "works": [
         {
           "id": 1,
           "title": "Sample Title 1",
           "date-created": "2016-12-25",
           "image": {
-            "url": "images/sample-1.png",
+            "url": "images/img-1.png",
             "caption": "Image 1"
           },
-          "tags": [
-            {
-              "name": "Illustrator"
-            },{
-              "name": "Branding"
-            }
-          ]
+          "status": {
+            "label": "Needs attention",
+            "class": "needs-attention"
+          },
+          "comments": {
+            "numUnread": 2,
+            "class": "unread"
+          }
         },
         {
           "id": 0,
           "title": "Sample Title 2",
           "date-created": "2016-12-25",
           "image": {
-            "url": "images/sample-2.png",
+            "url": "images/img-2.png",
             "caption": "Image 2"
           },
-          "tags": [
-            {
-              "name": "Photoshop"
-            },{
-              "name": "Advertising"
-            }
-          ]
+          "status": {
+            "label": "Approved",
+            "class": "approved"
+          },
+          "comments": {
+            "numUnread": 0,
+            "class": "ok"
+          }
         }
       ]
     },
@@ -78,17 +89,23 @@
       "numRequired": 2,
       "numProvided": 0,
       "isRequired": true,
-      "status": "not-started",
+      "status": {
+        "class": "not-started",
+        "percentage": 0
+      },
       "works": []
     },
     {
       "order": 4,
-      "name": "Other work",
-      "description": "Provide other work samples that evidence skills relevant to this major.",
+      "name": "Other work (optional)",
+      "description": "(Optional) Provide other work samples that evidence skills relevant to this major.",
       "numRequired": 0,
       "numProvided": 0,
       "isRequired": false,
-      "status": "complete",
+      "status": {
+        "class": "complete",
+        "percentage": 100
+      },
       "works": []
     }
   ]

@@ -1,0 +1,16 @@
+<ul class="collection-groups">
+    <li class="collection-group active">
+        <a class="label" href="index.html">All my work</a>
+    </li>
+    {{#each collectionGroups}}
+    <li class="collection-group">
+        <span class="label">My Collections</span>
+        <ul>
+            {{#each collections}}
+            <li><a href="collection-{{id}}.html">{{name}}</a></li>
+            {{/each}}
+        </ul>
+    </li>
+    {{/each}}
+</ul>
+<button class="ok">&plus; Collection</button>

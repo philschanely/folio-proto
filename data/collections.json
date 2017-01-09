@@ -1,17 +1,21 @@
 {
   "collectionGroups": [
     {
-      "name": "My Collections",
+      "name": "Program Collections",
       "collections": [
         {
-          "name": "Internship Portfolio",
+          "name": "Sophomore Review",
+          "id": "1"
+        },{
+          "name": "Junior Pre-internship Portfolio",
           "id": "0"
         },{
-          "name": "Mock Inteview Portfolio",
+          "name": "Senior Show",
           "id": "0"
         }
       ]
-    },{
+    },
+    {
       "name": "Course Collections",
       "collections": [
         {
@@ -32,16 +36,13 @@
         }
       ]
     },{
-      "name": "Program Collections",
+      "name": "My Collections",
       "collections": [
         {
-          "name": "Sophomore Review",
-          "id": "1"
-        },{
-          "name": "Junior Pre-internship Portfolio",
+          "name": "Internship Portfolio",
           "id": "0"
         },{
-          "name": "Senior Show",
+          "name": "Mock Inteview Portfolio",
           "id": "0"
         }
       ]

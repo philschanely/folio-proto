@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Folio: Student Portfolio Manager</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-work">
+<header>
+    <h1 class="brand">Folio</h1>
+    <p class="tagline">Show your work</p>
+</header>
+<main>
+    <div class="intro">
+        <p class="breadcrumbs">
+            <a href="collection-1-faculty.html">Sophomore Review Portfolio</a> /
+            <a href="collection-1-faculty-review.html">Student name</a>
+        </p>
+        <h2>{{title}}</h2>
+        <div class="details">
+            <p class="lead">{{date date-created}}</p>
+            <p>{{description}}</p>
+        </div>
+        <div class="options">
+            <button class="btn-status status-{{status.class}}" title="Status of work (click to change)">{{status.label}}</button>
+            <button class="btn-comments comments-{{comments.class}}" title="Unread comments (click to view)">{{comments.numUnread}}</button>
+        </div>
+    </div>
+    <ul class="work-images">
+        {{#each images}}
+        <li>
+            <figure>
+                <img src="{{url}}" />
+                <figcaption>{{caption}}</figcaption>
+            </figure>
+        </li>
+        {{/each}}
+    </ul>
+</main>
+<nav></nav>
+<div class="tray"></div>
+
+<script src="js/vendor-min.js"></script>
+<script src="js/scripts-min.js">
+
+    function responder_workTiles($target) {
+
+    }
+
+    function responder_studentList($target) {
+        if ($target.hasClass("label") && $target.closest(".select-students").length > 0) {
+            $(".select-students .students").toggleClass("on");
+        }
+    }
+</script>
+</body>
+</html>

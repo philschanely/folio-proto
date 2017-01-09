@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Folio: Student Portfolio Manager</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-work-public">
+    <header class="public-header">
+        <h1>Work by Student Name</h1>
+    </header>
+    <main>
+        <a href="collection-1-public.html">&laquo; Back to Portfolio</a>
+        <div class="intro">
+            <h2>{{title}}</h2>
+            <div class="details">
+                <p class="lead">{{date date-created}}</p>
+                <p>{{description}}</p>
+            </div>
+        </div>
+        <ul class="work-images">
+            {{#each images}}
+            <li>
+                <figure>
+                    <img src="{{url}}" />
+                    <figcaption>{{caption}}</figcaption>
+                </figure>
+            </li>
+            {{/each}}
+        </ul>
+    </main>
+
+    <script src="js/vendor-min.js"></script>
+    <script src="js/scripts-min.js"></script>
+</body>
+</html>
