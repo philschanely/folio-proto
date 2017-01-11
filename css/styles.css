@@ -36,7 +36,7 @@ body #prototype-nav {
   body {
     grid-template-columns: 300px 1fr;
     grid-template-rows: auto 240px auto auto;
-    grid-template-areas: "proto-nav proto-nav" "brand  main" "nav    main" "footer footer";
+    grid-template-areas: "proto-nav proto-nav" "brand     main" "nav       main" "footer    footer";
   }
   body.page-work-public,
   body.page-collection-public {
