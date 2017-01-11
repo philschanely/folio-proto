@@ -47,60 +47,15 @@ body #prototype-nav {
 }
 .breadcrumbs {
   font-weight: 400;
+  margin-left: 20px;
 }
-button {
-  border: 1px solid #ECEFF1;
-  box-sizing: border-box;
-  display: block;
-  text-align: center;
-  color: #37474F;
-  background-color: white;
-  padding: 11px 30px;
-  transition: 0.2s all linear;
-  text-decoration: none;
-  width: 100%;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
+.btn-edit-collection {
+  width: 45%;
 }
-button:hover {
-  background-color: #37474F;
-  color: white;
-}
-button:focus {
-  outline: none;
-}
-button.ok {
-  border-color: #00C853;
-  color: #00C853;
-}
-button.ok:hover {
-  background-color: #00C853;
-  color: white;
-}
-button.edit {
-  border-color: #FF9800;
-  color: #FF9800;
-}
-button.edit:hover {
-  background-color: #FF9800;
-  color: white;
-}
-button.cancel {
-  border-color: #F44336;
-  color: #F44336;
-}
-button.cancel:hover {
-  background-color: #F44336;
-  color: white;
-}
-button.info {
-  border-color: #03A9F4;
-  color: #03A9F4;
-}
-button.info:hover {
-  background-color: #03A9F4;
-  color: white;
+@media screen and (min-width: 600px) {
+  .btn-edit-collection {
+    width: 260px;
+  }
 }
 .btn-comments {
   display: block;
@@ -263,6 +218,60 @@ button.info:hover {
 }
 .btn-status.status-needs-attention:hover {
   background-color: #FF9800;
+}
+button {
+  border: 1px solid #ECEFF1;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  color: #37474F;
+  background-color: white;
+  padding: 11px 30px;
+  transition: 0.2s all linear;
+  text-decoration: none;
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+button:hover {
+  background-color: #37474F;
+  color: white;
+}
+button:focus {
+  outline: none;
+}
+button.ok {
+  border-color: #00C853;
+  color: #00C853;
+}
+button.ok:hover {
+  background-color: #00C853;
+  color: white;
+}
+button.edit {
+  border-color: #FF9800;
+  color: #FF9800;
+}
+button.edit:hover {
+  background-color: #FF9800;
+  color: white;
+}
+button.cancel {
+  border-color: #F44336;
+  color: #F44336;
+}
+button.cancel:hover {
+  background-color: #F44336;
+  color: white;
+}
+button.info {
+  border-color: #03A9F4;
+  color: #03A9F4;
+}
+button.info:hover {
+  background-color: #03A9F4;
+  color: white;
 }
 .category {
   border-bottom: 1px solid #ECEFF1;
@@ -501,22 +510,9 @@ input[type="checkbox"] {
   margin-bottom: 10px;
 }
 .intro .options {
-  display: grid;
-  grid-template-areas: "first second";
+  margin-top: 20px;
+  display: flex;
   justify-content: space-between;
-  grid-gap: 20px;
-}
-.intro .options .btn-edit-collection {
-  grid-area: first;
-}
-.intro .options .btn-comments {
-  grid-area: second;
-}
-.intro .options .btn-status {
-  grid-area: first;
-}
-.intro .options .select-students {
-  grid-area: second;
 }
 li {
   font-size: 14px;
@@ -621,6 +617,20 @@ p.lead {
 .page-collection-public main {
   padding: 20px;
 }
+.page-work .intro {
+  display: grid;
+  grid-template-columns: auto 100px;
+  grid-template-areas: "name    options" "details details";
+}
+.page-work .intro .name {
+  grid-area: name;
+}
+.page-work .intro .details {
+  grid-area: details;
+}
+.page-work .intro .options {
+  grid-area: options;
+}
 .page-work-public .link-back {
   margin-left: 20px;
 }
@@ -716,6 +726,7 @@ p.lead {
 }
 .select-students {
   position: relative;
+  width: 45%;
 }
 .select-students.reviewing .students {
   top: 60px;
@@ -750,6 +761,11 @@ p.lead {
 }
 .select-students .students.on {
   display: block;
+}
+@media screen and (min-width: 600px) {
+  .select-students {
+    width: 260px;
+  }
 }
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
@@ -802,10 +818,11 @@ textarea:focus {
 .work-images {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 260px 120px 120px;
   grid-template-areas: "main   main" "sub-1 sub-2" "sub-3 sub-4";
   padding: 0 20px 20px;
+  max-width: 960px;
 }
 .work-images li:nth-child(1) {
   grid-area: main;
@@ -834,14 +851,14 @@ textarea:focus {
 }
 @media screen and (min-width: 960px) {
   .work-images {
-    grid-template-columns: 140px 140px 140px 140px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 400px 120px;
     grid-template-areas: "main  main  main  main" "sub-1 sub-2 sub-3 sub-4";
   }
 }
 @media screen and (min-width: 1200px) {
   .work-images {
-    grid-template-columns: 590px 160px;
+    grid-template-columns: 4fr 1fr;
     grid-template-rows: 120px 120px 120px 120px;
     grid-template-areas: "main sub-1" "main sub-2" "main sub-3" "main sub-4";
   }

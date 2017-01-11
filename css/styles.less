@@ -175,57 +175,8 @@
   }
 }
 .grid-intro-options() {
-  display:grid;
-  grid-template-areas: "first second";
+  display:flex;
   justify-content: space-between;
-  grid-gap:20px;
-
-  .btn-edit-collection { grid-area: first; }
-  .btn-comments { grid-area: second; }
-  .btn-status { grid-area: first; }
-  .select-students { grid-area: second; }
-}
-.grid-public-work() {
-  display:grid;
-  grid-gap:10px;
-  grid-template-columns: 50% 50%;
-  grid-template-rows:260px 120px 120px;
-  grid-template-areas:
-    "main   main"
-    "sub-1 sub-2"
-    "sub-3 sub-4";
-
-  li:nth-child(1) { grid-area: main; }
-  li:nth-child(2) { grid-area: sub-1; }
-  li:nth-child(3) { grid-area: sub-2; }
-  li:nth-child(4) { grid-area: sub-3; }
-  li:nth-child(5) { grid-area: sub-4; }
-
-  @media screen and (min-width:500px) {
-    grid-template-rows:300px 200px 200px
-  }
-
-  @media screen and (min-width:768px) {
-    grid-template-rows:400px 260px 260px
-  }
-
-  @media screen and (min-width:@size-desktop) {
-    grid-template-columns: 140px 140px 140px 140px;
-    grid-template-rows:400px 120px;
-    grid-template-areas:
-      "main  main  main  main"
-      "sub-1 sub-2 sub-3 sub-4";
-  }
-
-  @media screen and (min-width:1200px) {
-    grid-template-columns: 590px 160px;
-    grid-template-rows:120px 120px 120px 120px;
-    grid-template-areas:
-            "main sub-1"
-            "main sub-2"
-            "main sub-3"
-            "main sub-4";
-  }
 }
 .grid-status() {
   display:grid;
@@ -257,6 +208,59 @@
   display:flex;
   flex-flow: row wrap;
 }
+.grid-work-intro() {
+  display:grid;
+  grid-template-columns: auto 100px;
+  grid-template-areas:
+          "name    options"
+          "details details";
+
+  .name { grid-area: name; }
+  .details { grid-area: details; }
+  .options { grid-area: options; }
+}
+.grid-work-images() {
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows:260px 120px 120px;
+  grid-template-areas:
+          "main   main"
+          "sub-1 sub-2"
+          "sub-3 sub-4";
+
+  li:nth-child(1) { grid-area: main; }
+  li:nth-child(2) { grid-area: sub-1; }
+  li:nth-child(3) { grid-area: sub-2; }
+  li:nth-child(4) { grid-area: sub-3; }
+  li:nth-child(5) { grid-area: sub-4; }
+
+  @media screen and (min-width:500px) {
+    grid-template-rows:300px 200px 200px
+  }
+
+  @media screen and (min-width:768px) {
+    grid-template-rows:400px 260px 260px
+  }
+
+  @media screen and (min-width:@size-desktop) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:400px 120px;
+    grid-template-areas:
+            "main  main  main  main"
+            "sub-1 sub-2 sub-3 sub-4";
+  }
+
+  @media screen and (min-width:1200px) {
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows:120px 120px 120px 120px;
+    grid-template-areas:
+            "main sub-1"
+            "main sub-2"
+            "main sub-3"
+            "main sub-4";
+  }
+}
 
 
 // Styles
@@ -273,13 +277,16 @@ body {
   .grid-body;
 }
 
-.breadcrumbs { font-weight:400; }
-
-button {
-  .btn;
-  .font-ssp;
-  font-size:14px;
+.breadcrumbs {
   font-weight:400;
+  margin-left:20px;
+}
+
+.btn-edit-collection {
+  width:45%;
+  @media screen and (min-width:600px) {
+    width:260px;
+  }
 }
 
 .btn-comments {
@@ -333,6 +340,13 @@ button {
     .btn-round(@color-orange);
     background-image:url("../images/icon-attention.png");
   }
+}
+
+button {
+  .btn;
+  .font-ssp;
+  font-size:14px;
+  font-weight:400;
 }
 
 .category {
@@ -506,7 +520,10 @@ input {
     display: block;
     margin-bottom:10px;
   }
-  .options { .grid-intro-options; }
+  .options {
+    margin-top:20px;
+    .grid-intro-options;
+  }
 }
 
 li {
@@ -592,6 +609,10 @@ p {
   main { padding:20px; }
 }
 
+.page-work .intro {
+  .grid-work-intro;
+}
+
 .page-work-public {
   .link-back { margin-left:20px; }
   main { padding-top:20px; }
@@ -667,6 +688,7 @@ p {
 
 .select-students {
   position: relative;
+  width:45%;
   &.reviewing .students { top:60px; }
   .label { background:right center no-repeat url("../images/icon-down.png"); }
   .selected-student {
@@ -695,6 +717,9 @@ p {
     }
     &.on { display: block; }
   }
+  @media screen and (min-width: 600px) {
+    width:260px;
+  }
 }
 
 textarea { .input; }
@@ -720,8 +745,9 @@ textarea { .input; }
 }
 
 .work-images {
-  .grid-public-work;
+  .grid-work-images;
   padding:0 20px 20px;
+  max-width:960px;
   li { background-size: cover; }
   img { display: none; }
 }
