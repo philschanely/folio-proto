@@ -40,13 +40,9 @@ function showTray(tplUrl, dataUrl) {
     snippinLoad(tplUrl, dataUrl, ".tray");
 }
 
-function responderWorkTiles($target) {
-    if ($target.hasClass("btn-status")) {
-        toggleStatusPopout();
-    } else if ($target.hasClass("btn-comments")) {
-        showTray("templates/comments.tpl.html", "data/works/single.json");
-    } else if ($target.closest("li").hasClass("work-tile") || $target.closest("li").hasClass("work-tile-placeholder")) {
-        showTray("templates/form/edit-work.tpl.html", "data/works/single.json");
+function responderCloseTray($target) {
+    if ($target.hasClass("tray")) {
+        $(".tray").removeClass("on");
     }
 }
 
@@ -55,6 +51,16 @@ function responderStudentList($target) {
     var isStudentListNamed = $target.hasClass("selected-student") && $target.closest(".select-students").length > 0;
     if (isStudentListLabel || isStudentListNamed) {
         $(".select-students .students").toggleClass("on");
+    }
+}
+
+function responderWorkTiles($target) {
+    if ($target.hasClass("btn-status")) {
+        toggleStatusPopout();
+    } else if ($target.hasClass("btn-comments")) {
+        showTray("templates/comments.tpl.html", "data/works/single.json");
+    } else if ($target.closest("li").hasClass("work-tile") || $target.closest("li").hasClass("work-tile-placeholder")) {
+        showTray("templates/form/edit-work.tpl.html", "data/works/single.json");
     }
 }
 
@@ -78,7 +84,7 @@ $(function(){
     });
 
     $.get("templates/prototype-nav.tpl.html", function(data) {
-        $("body").prepend(data);
+        $("body").append(data);
     });
 
     $.get("templates/footer.tpl.html", function(data) {
@@ -89,6 +95,11 @@ $(function(){
         case "page-all-work":
             snippinLoad("templates/nav.tpl.html", "data/collections.json", "nav", setupNav);
             snippinLoad("templates/work-tile.tpl.html", "data/works/all.json", "main .work-tiles");
+            $("body").on("click", function(e){
+                var $target = $(e.target);
+                responderWorkTiles($target);
+                responderCloseTray($target);
+            });
             break;
 
         case "page-collection":
@@ -97,6 +108,7 @@ $(function(){
             $("body").on("click", function(e){
                 var $target = $(e.target);
                 responderWorkTiles($target);
+                responderCloseTray($target);
             });
             break;
 
@@ -106,6 +118,15 @@ $(function(){
             $("body").on("click", function(e){
                 var $target = $(e.target);
                 responderStudentList($target);
+                responderCloseTray($target);
+                if ($target.hasClass("btn-edit-collection")) {
+                    e.preventDefault();
+                    showTray("templates/form/edit-collection.tpl.html", "data/works/sophomore-review.json");
+                }
+                if ($target.hasClass("btn-edit-category") || $target.hasClass("btn-add-category")) {
+                    e.preventDefault();
+                    showTray("templates/form/edit-category.tpl.html", "data/works/sophomore-review.json");
+                }
             });
             break;
 
@@ -116,6 +137,7 @@ $(function(){
                 var $target = $(e.target);
                 responderWorkTiles($target);
                 responderStudentList($target);
+                responderCloseTray($target);
             });
             break;
 
@@ -124,12 +146,18 @@ $(function(){
             $("body").on("click", function(e){
                 var $target = $(e.target);
                 responderWorkTiles($target);
+                responderCloseTray($target);
             });
             break;
 
         case "page-work":
             snippinLoad("templates/nav-faculty.tpl.html", "data/collections.json", "nav", setupNav);
             snippin("main", "data/works/single.json", "main");
+            $("body").on("click", function(e){
+                var $target = $(e.target);
+                responderWorkTiles($target);
+                responderCloseTray($target);
+            });
             break;
 
         case "page-work-public":

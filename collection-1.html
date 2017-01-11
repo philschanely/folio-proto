@@ -10,36 +10,38 @@
         <h1 class="brand">Folio</h1>
         <p class="tagline">Show your work</p>
     </header>
-    <main class="all-work">
+    <main>
         <div class="intro">
             <h2>{{name}}</h2>
+            <a class="btn-public info" href="collection-1-public.html">Public view</a>
             <div class="details">
                 <p class="lead">{{description}}</p>
                 <p>Add new items here as you see fit. You can add any work item to a collection later. Items are also automatically added here when you add them directly to a collection.</p>
-            </div>
-            <div class="options">
-                <a class="btn-public info" href="collection-1-public.html">Public view</a>
             </div>
         </div>
         <ol class="categories">
             {{#each categories}}
             <li class="category">
-                <h3 class="name">{{order}}. {{name}}</h3>
-                <p class="description">{{description}}</p>
-                <div class="requirement-status status-{{status.class}}">
-                    <p class="label">Status: {{numProvided}} of {{numRequired}}</p>
-                    <p class="progress-bar">
-                        <em class="progress" style="width:{{status.percentage}}%;">{{status.percentage}}%</em>
-                    </p>
+                <div class="details">
+                    <h3 class="name">{{order}}. {{name}}</h3>
+                    <p class="description">{{description}}</p>
+                    <div class="requirement-status status-{{status.class}}">
+                        <p class="label">Status: {{numProvided}} of {{numRequired}}</p>
+                        <p class="progress-bar">
+                            <em class="progress" style="width:{{status.percentage}}%;">{{status.percentage}}%</em>
+                        </p>
+                    </div>
                 </div>
                 <ul class="work-tiles">
                     {{#each works}}
                     <li class="work-tile">
-                        <em class="title">{{title}}</em>
-                        <span class="date">{{date date-created}}</span>
-                        <figure class="image" style="background-image:url('{{image.url}}');">
-                            <img src="{{image.url}}" />
-                        </figure>
+                        <div class="info">
+                            <em class="title">{{title}}</em>
+                            <span class="date">{{date date-created}}</span>
+                            <figure class="image" style="background-image:url('{{image.url}}');">
+                                <img src="{{image.url}}" />
+                            </figure>
+                        </div>
                         <div class="options">
                             <button class="btn-status status-{{status.class}}" title="Status of work (click to change)">{{status.label}}</button>
                             <button class="btn-comments comments-{{comments.class}}" title="Unread comments (click to view)">{{comments.numUnread}}</button>

@@ -12,6 +12,12 @@
     },{
       "url": "images/img-3.png",
       "caption": "Image 3"
+    },{
+      "url": "images/img-4.png",
+      "caption": "Image 3"
+    },{
+      "url": "images/img-5.png",
+      "caption": "Image 3"
     }
   ],
   "status": {
@@ -20,7 +26,19 @@
   },
   "comments": {
     "numUnread": 2,
-    "class": "unread"
+    "class": "unread",
+    "comments": [
+      {
+        "date": "2017-12-29",
+        "user": { "name": "Aaron Huffman" },
+        "comment": "This work needs to consider layout and unity more in order to qualify."
+      },
+      {
+        "date": "2017-12-30",
+        "user": { "name": "Phil Schanely" },
+        "comment": "Yes, we'd like to see more advance use of compositional techniques here."
+      }
+    ]
   }
 
 }

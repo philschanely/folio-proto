@@ -1,10 +1,12 @@
-<h2>Comments</h2>
-<ul>
-    {{#each comments}}
-    <li>
-        <em>Made {{date}} by {{user.name}}</em>
-        <p>{{comment}}</p>
-    </li>
-    {{/each}}
-</ul>
-<button class="ok">+ Comment</button>
+<div class="content">
+    <h2>Comments</h2>
+    <ul>
+        {{#each comments.comments}}
+        <li>
+            <em>Made {{date}} by {{user.name}}</em>
+            <p>{{comment}}</p>
+        </li>
+        {{/each}}
+    </ul>
+    <button class="ok">+ Comment</button>
+</div>
