@@ -1,0 +1,63 @@
+.work-images {
+  @include grid-work-images;
+  padding: 0 20px 20px;
+  max-width: 960px;
+  li { background-size: cover; }
+  img { display: none; }
+}
+
+.work-tile {
+  border: 1px solid $color-ltgrey;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 170px;
+  height: 155px;
+  position: relative;
+  &.info, .info { @include grid-tile; }
+  a { color: $color-grey; }
+  .title {
+    font-weight: 400;
+    display: block;
+  }
+  .date { display: block; }
+  .image {
+    max-width: 100%;
+    background-size: cover;
+    height: 95px;
+    img { display: none; }
+  }
+  .options {
+    position: absolute;
+    padding-top: 0;
+    top: 10px;
+    right: 10px;
+  }
+  @media screen and (min-width: $size-desktop) {
+    padding: 10px;
+    width: 260px;
+    height: 220px;
+    .date { text-align: right; }
+    .image { height: 165px; }
+    .options {
+      top: 20px;
+      right: 20px;
+    }
+  }
+}
+
+.work-tile-placeholder {
+  padding: 0;
+  width: 170px;
+  height: 155px;
+  button { height: 100%; }
+  @media screen and (min-width: $size-desktop) {
+    width: 260px;
+    height: 220px;
+  }
+}
+
+.work-tiles {
+  @include grid-tiles;
+  padding: 0px;
+  li { margin: 0 20px 40px; }
+}

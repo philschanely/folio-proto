@@ -1,0 +1,129 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'grid';
+@import 'basics';
+@import 'app';
+@import 'buttons';
+@import 'work';
+
+// MISCELLANEOUS
+
+.category {
+  border-bottom: 1px solid $color-ltgrey;
+  .details {
+    padding: 0 20px 20px;
+    box-sizing: border-box;
+  }
+  &:last-child { border: none; }
+  .items-required { font-weight: 600; }
+  .btn-reorder {
+    @include img-replace;
+    background-image: url("../images/icon-drag.png");
+    background-position: right center;
+  }
+  .options {
+    padding-top: 22px;
+    box-sizing: border-box;
+  }
+  @media screen and (min-width: $size-desktop) {
+    padding: 0 20px 20px;
+  }
+}
+
+.collection-group {
+  margin: 20px 0 15px;
+  .label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+  }
+  a {
+    display: block;
+    padding: 5px 10px 5px 20px;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    font-weight: 400;
+    color: $color-blue;
+    &:hover { background-color: $color-ltgrey; }
+  }
+  @media screen and (min-width: $size-desktop) {
+    &.active a {
+      background-color: #03A9F4;
+      background-image: url("../images/icon-indicator.png");
+      background-repeat: no-repeat;
+      background-position: 7px center;
+      color: white;
+      font-weight: 400;
+    }
+  }
+}
+
+.requirement-status {
+  font-weight: 400;
+  @include grid-status;
+  &.status-not-started {
+    color: $color-red;
+    .progress-bar { background-color: fadeout($color-red, 80%); }
+    .progress { background-color: $color-red; }
+  }
+  &.status-complete {
+    color: $color-green;
+    .progress-bar { background-color: fadeout($color-green, 80%); }
+    .progress { background-color: $color-green; }
+  }
+  &.status-in-progress {
+    color: $color-orange;
+    .progress-bar { background-color: fadeout($color-orange, 80%); }
+    .progress { background-color: $color-orange; }
+  }
+  .label { font-weight: 600; }
+  .progress-bar {
+    margin-top: 15px;
+    height: 10px;
+    overflow: hidden;
+    max-width: 100%;
+  }
+  .progress {
+    @include img-replace;
+    min-width: 1px;
+    display: block;
+  }
+}
+
+.select-students {
+  position: relative;
+  width: 45%;
+  &.reviewing .students { top: 60px; }
+  .label { background: right center no-repeat url("../images/icon-down.png"); }
+  .selected-student {
+    display: block;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 30px;
+    color: $color-blue;
+  }
+  .students {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 30px;
+    right: 0;
+    background-color: $color-ltgrey;
+    box-sizing: border-box;
+    padding: 10px 0;
+    a {
+      display: block;
+      padding: 5px 23px;
+      &:hover {
+        color: white;
+        background-color: $color-blue;
+      }
+    }
+    &.on { display: block; }
+  }
+  @media screen and (min-width: 600px) {
+    width: 260px;
+  }
+}

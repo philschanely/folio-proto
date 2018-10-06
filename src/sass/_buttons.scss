@@ -1,0 +1,66 @@
+button, .btn {
+  @include btn;
+  @include font-ssp;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.btn-edit-collection {
+  width: 45%;
+  @media screen and (min-width: 600px) {
+    width: 260px;
+  }
+}
+
+.btn-comments {
+  @include btn-round(transparent);
+  background-repeat: no-repeat;
+  background-position: center 6px;
+  background-color: transparent;
+  background-image: url("../images/icon-bubble-green.png");
+  border: none;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  &.comments-unread { background-image: url("../images/icon-bubble-orange.png"); }
+  &.comments-ok {
+    @include img-replace;
+    background-image: url("../images/icon-plus-lt.png"), url("../images/icon-bubble-green.png");
+    background-position: center 13px, center 6px;
+  }
+}
+
+.btn-public {
+  @include btn;
+  margin-top: 10px;
+  @media screen and (min-width: 600px) {
+    position: absolute;
+    margin: 0;
+    width: 160px;
+    top: 89px;
+    right: 20px;
+  }
+  @media screen and (min-width: $size-desktop) {
+    top: 42px;
+  }
+}
+
+.btn-status {
+  @include img-replace;
+  &.status-approved {
+    @include btn-round($color-green);
+    background-image: url("../images/icon-check.png");
+  }
+  &.status-unreviewed {
+    @include btn-round();
+    border-color: $color-grey;
+  }
+  &.status-denied {
+    @include btn-round($color-red);
+    background-image: url("../images/icon-x-lt.png");
+  }
+  &.status-needs-attention {
+    @include btn-round($color-orange);
+    background-image: url("../images/icon-attention.png");
+  }
+}

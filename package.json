@@ -1,0 +1,26 @@
+{
+  "name": "folio-proto",
+  "version": "1.0.0",
+  "description": "Prototype demonstration of Folio, a student portfolio management system",
+  "main": "src/index.html",
+  "scripts": {
+    "sync": "browser-sync start -s \"src\" -f \"src/**/*.*\"",
+    "sass": "node-sass -w --include-path='src/sass' --source-map=true src/style.scss src/style.css",
+    "start": "npm-run-all -p sync sass"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philschanely/folio-proto.git"
+  },
+  "author": "Phil Schanely",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philschanely/folio-proto/issues"
+  },
+  "homepage": "https://github.com/philschanely/folio-proto#readme",
+  "devDependencies": {
+    "browser-sync": "^2.25.0",
+    "node-sass": "^4.9.3",
+    "npm-run-all": "^4.1.3"
+  }
+}

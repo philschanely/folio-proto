@@ -1,0 +1,110 @@
+@mixin btn() {
+  border: 1px solid $color-ltgrey;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  color: $color-grey;
+  background-color: white;
+  padding: 11px 30px;
+  transition: 0.2s all linear;
+  text-decoration: none;
+  width: 100%;
+  &:hover {
+    background-color: $color-grey;
+    color: white;
+  }
+  &:focus { outline: none; }
+  &.ok {
+    border-color: $color-green;
+    color: $color-green;
+    &:hover {
+      background-color: $color-green;
+      color: white;
+    }
+  }
+  &.edit {
+    border-color: $color-orange;
+    color: $color-orange;
+    &:hover {
+      background-color: $color-orange;
+      color: white;
+    }
+  }
+  &.cancel {
+    border-color: $color-red;
+    color: $color-red;
+    &:hover {
+      background-color: $color-red;
+      color: white;
+    }
+  }
+  &.info {
+    border-color: $color-blue;
+    color: $color-blue;
+    &:hover {
+      background-color: $color-blue;
+      color: white;
+    }
+  }
+}
+@mixin btn-round($bg-color: white, $size: 40px) {
+  display: block;
+  width: $size;
+  height: $size;
+  border-radius: $size/2;
+  background-color: $bg-color;
+  border: 1px solid white;
+  box-sizing: border-box;
+  padding: 0;
+  cursor: pointer;
+  &:hover { background-color: $bg-color; }
+}
+@mixin font-ssp() {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@mixin h1() {
+  font-size: 59px;
+  font-weight: 600;
+  line-height: 74px;
+  text-transform: uppercase;
+}
+
+@mixin h2() {
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 600;
+  @media screen and (min-width: $size-desktop) {
+    font-size: 37px;
+    line-height: 40px;
+  }
+}
+
+@mixin h3() {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 25px;
+  margin: 15px 0 5px;
+  @media screen and (min-width: $size-desktop) {
+    font-size: 23px;
+    line-height: 30px;
+  }
+}
+@mixin img-replace() {
+  text-indent: -9999px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@mixin input() {
+  @include font-ssp;
+  font-size: 14px;
+  color: $color-grey;
+  border: 1px solid $color-ltgrey;
+  padding: 6px 8px;
+  line-height: 20px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  font-weight: 300;
+  &:focus { border-color: $color-blue; }
+}

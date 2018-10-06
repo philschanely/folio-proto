@@ -1,0 +1,74 @@
+a {
+  color: $color-blue;
+  text-decoration: none;
+}
+
+body {
+  @include font-ssp;
+  font-weight: 300;
+  color: $color-grey;
+  @include grid-body;
+}
+
+form {
+  label {
+    font-weight: 400;
+    margin-bottom: 5px;
+    display: block;
+  }
+  li { margin-bottom: 10px; }
+  h2 { @include h3; }
+  .options { @include grid-form-options; }
+}
+
+h1, .h1 {
+  @include h1;
+}
+
+h2, .h2 {
+  @include h2;
+}
+
+h3, .h3 {
+  @include h3;
+}
+
+img { max-width: 100%; }
+
+input {
+  @include input;
+  &[type="checkbox"] {
+    display: inline;
+    width: auto;
+  }
+}
+
+li {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+main {
+  @media screen and (min-width: $size-desktop) {
+    padding: 27px 20px 0 0;
+  }
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 10px 0;
+  max-width: 760px;
+  &.lead {
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 300;
+    max-width: 760px;
+    @media screen and (min-width: $size-desktop) {
+      font-size: 23px;
+      line-height: 30px;
+    }
+  }
+}
+
+textarea { @include input; }
