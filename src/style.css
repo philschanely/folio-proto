@@ -768,52 +768,58 @@ button, .btn {
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 10px; }
-  .requirement-status.status-not-started {
-    color: #F44336; }
-    .requirement-status.status-not-started .progress-bar {
-      background-color: fadeout(#F44336, 80%); }
-    .requirement-status.status-not-started .progress {
-      background-color: #F44336; }
-  .requirement-status.status-complete {
-    color: #00C853; }
-    .requirement-status.status-complete .progress-bar {
-      background-color: fadeout(#00C853, 80%); }
-    .requirement-status.status-complete .progress {
-      background-color: #00C853; }
-  .requirement-status.status-in-progress {
-    color: #FF9800; }
-    .requirement-status.status-in-progress .progress-bar {
-      background-color: fadeout(#FF9800, 80%); }
-    .requirement-status.status-in-progress .progress {
-      background-color: #FF9800; }
-  .requirement-status .label {
-    font-weight: 600; }
-  .requirement-status .progress-bar {
-    margin-top: 15px;
-    height: 10px;
-    overflow: hidden;
-    max-width: 100%; }
-  .requirement-status .progress {
-    text-indent: -9999px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    min-width: 1px;
-    display: block; }
 
-.select-students {
+.requirement-status--complete {
+  color: #00C853; }
+  .requirement-status--complete .requirement-status__progress-bar {
+    background-color: rgba(0, 200, 83, 0.2); }
+  .requirement-status--complete .requirement-status__progress {
+    background-color: #00C853; }
+
+.requirement-status--in-progress {
+  color: #FF9800; }
+  .requirement-status--in-progress .requirement-status__progress-bar {
+    background-color: rgba(255, 152, 0, 0.2); }
+  .requirement-status--in-progress .requirement-status__progress {
+    background-color: #FF9800; }
+
+.requirement-status--not-started {
+  color: #F44336; }
+  .requirement-status--not-started .requirement-status__progress-bar {
+    background-color: rgba(244, 67, 54, 0.2); }
+  .requirement-status--not-started .requirement-status__progress {
+    background-color: #F44336; }
+
+.requirement-status__label {
+  font-weight: 600; }
+
+.requirement-status__progress {
+  text-indent: -9999px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-width: 1px;
+  display: block; }
+
+.requirement-status__progress-bar {
+  margin-top: 15px;
+  height: 10px;
+  overflow: hidden;
+  max-width: 100%; }
+
+.select-list {
   position: relative;
   width: 45%; }
-  .select-students.reviewing .students {
+  .select-list.reviewing .select-list__options {
     top: 60px; }
-  .select-students .label {
+  .select-list .select-list__label {
     background: right center no-repeat url("../images/icon-down.png"); }
-  .select-students .selected-student {
+  .select-list .select-list__item--selected {
     display: block;
     font-size: 23px;
     font-weight: 300;
     line-height: 30px;
     color: #03A9F4; }
-  .select-students .students {
+  .select-list .select-list__options {
     display: none;
     position: absolute;
     width: 100%;
@@ -822,16 +828,16 @@ button, .btn {
     background-color: #ECEFF1;
     box-sizing: border-box;
     padding: 10px 0; }
-    .select-students .students a {
+    .select-list .select-list__options a {
       display: block;
       padding: 5px 23px; }
-      .select-students .students a:hover {
+      .select-list .select-list__options a:hover {
         color: white;
         background-color: #03A9F4; }
-    .select-students .students.on {
+    .select-list .select-list__options.select-list__options--on {
       display: block; }
   @media screen and (min-width: 600px) {
-    .select-students {
+    .select-list {
       width: 260px; } }
 
 /*# sourceMappingURL=style.css.map */

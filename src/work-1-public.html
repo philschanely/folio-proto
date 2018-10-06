@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Folio: Student Portfolio Manager</title>
     <meta charset="utf-8" />
     <link type="text/css" rel="stylesheet" href="style.css" />
-</head>
-<body class="page-work-public">
+  </head>
+  <body class="page-work-public">
     <header class="public-header">
-        <h1>Work by Student Name</h1>
+      <h1>Work by Student Name</h1>
     </header>
     <main>
-        <a class="link-back" href="collection-1-public.html">&laquo; Back to Portfolio</a>
-        <div class="intro">
-            <h2>{{title}}</h2>
-            <div class="details">
-                <p class="lead">{{date date-created}}</p>
-                <p>{{description}}</p>
-            </div>
+      <a class="link-back" href="collection-1-public.html">&laquo; Back to Portfolio</a>
+      <div class="intro">
+        <h2>{{title}}</h2>
+        <div class="details">
+          <p class="lead">{{date date-created}}</p>
+          <p>{{description}}</p>
         </div>
-        <ul class="work-images">
-            {{#each images}}
-            <li style="background-image:url('{{{url}}}');">
-                <img src="{{url}}" />
-            </li>
-            {{/each}}
-        </ul>
+      </div>
+      <ul class="work-images">
+        {{#each images}}
+        <li style="background-image:url('{{{url}}}');">
+          <img src="{{url}}" />
+        </li>
+        {{/each}}
+      </ul>
     </main>
 
     <script src="js/vendor-min.js"></script>
-    <script src="js/scripts-min.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

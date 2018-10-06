@@ -1,20 +1,20 @@
 <div id="collections" class="nav-body">
-    <ul class="collection-groups">
-        <li class="collection-group active">
-            <a class="label" href="index.html">All my work</a>
-        </li>
-        {{#each collectionGroups}}
-        <li class="collection-group">
-            <span class="label">My Collections</span>
-            <ul>
-                {{#each collections}}
-                <li><a href="collection-{{id}}.html">{{name}}</a></li>
-                {{/each}}
-            </ul>
-        </li>
+  <ul class="collection-groups">
+    <li class="collection-group active">
+      <a class="label" href="index.html">All my work</a>
+    </li>
+    {{#each collectionGroups}}
+    <li class="collection-group">
+      <span class="label">My Collections</span>
+      <ul>
+        {{#each collections}}
+        <li><a href="collection-{{id}}.html">{{name}}</a></li>
         {{/each}}
-    </ul>
-    <button class="ok">&plus; Collection</button>
+      </ul>
+    </li>
+    {{/each}}
+  </ul>
+  <button class="ok">&plus; Collection</button>
 </div>
 <a class="mobile-nav-link" href="#collections">View Collection List</a>
 <button class="btn-close">Close navigation</button>

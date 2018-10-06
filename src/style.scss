@@ -63,48 +63,40 @@
 .requirement-status {
   font-weight: 400;
   @include grid-status;
-  &.status-not-started {
-    color: $color-red;
-    .progress-bar { background-color: fadeout($color-red, 80%); }
-    .progress { background-color: $color-red; }
-  }
-  &.status-complete {
-    color: $color-green;
-    .progress-bar { background-color: fadeout($color-green, 80%); }
-    .progress { background-color: $color-green; }
-  }
-  &.status-in-progress {
-    color: $color-orange;
-    .progress-bar { background-color: fadeout($color-orange, 80%); }
-    .progress { background-color: $color-orange; }
-  }
-  .label { font-weight: 600; }
-  .progress-bar {
-    margin-top: 15px;
-    height: 10px;
-    overflow: hidden;
-    max-width: 100%;
-  }
-  .progress {
-    @include img-replace;
-    min-width: 1px;
-    display: block;
+}
+@each $status, $color in $statuses {
+  .requirement-status--#{$status} {
+    color: $color;
+    .requirement-status__progress-bar { background-color: fade-out($color, 0.8); }
+    .requirement-status__progress { background-color: $color; }
   }
 }
+.requirement-status__label { font-weight: 600; }
+.requirement-status__progress {
+  @include img-replace;
+  min-width: 1px;
+  display: block;
+}
+.requirement-status__progress-bar {
+  margin-top: 15px;
+  height: 10px;
+  overflow: hidden;
+  max-width: 100%;
+}
 
-.select-students {
+.select-list {
   position: relative;
   width: 45%;
-  &.reviewing .students { top: 60px; }
-  .label { background: right center no-repeat url("../images/icon-down.png"); }
-  .selected-student {
+  &.reviewing .select-list__options { top: 60px; }
+  .select-list__label { background: right center no-repeat url("../images/icon-down.png"); }
+  .select-list__item--selected {
     display: block;
     font-size: 23px;
     font-weight: 300;
     line-height: 30px;
     color: $color-blue;
   }
-  .students {
+  .select-list__options {
     display: none;
     position: absolute;
     width: 100%;
@@ -121,7 +113,7 @@
         background-color: $color-blue;
       }
     }
-    &.on { display: block; }
+    &.select-list__options--on { display: block; }
   }
   @media screen and (min-width: 600px) {
     width: 260px;

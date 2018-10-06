@@ -1,57 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Folio: Student Portfolio Manager</title>
-    <meta charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="style.css" />
-</head>
-<body class="page-collection-faculty">
+  <head>
+      <title>Folio: Student Portfolio Manager</title>
+      <meta charset="utf-8" />
+      <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-collection-faculty">
     <header>
-        <h1 class="brand">Folio</h1>
-        <p class="tagline">Show your work</p>
+      <h1 class="brand">Folio</h1>
+      <p class="tagline">Show your work</p>
     </header>
     <main>
-        <div class="intro">
-            <h2>{{name}}</h2>
-            <div class="details">
-                <p class="lead">{{description}}</p>
-                <p>Add new items here as you see fit. You can add any work item to a collection later. Items are also automatically added here when you add them directly to a collection.</p>
-            </div>
-            <div class="options">
-                <button class="btn-edit-collection edit" href="collection-1-public.html">Edit Collection</button>
-                <div class="select-students">
-                    <p class="label">Select a student:</p>
-                    <ul class="students">
-                        <li><a href="collection-1-faculty-review.html">Student name 1</a></li>
-                        <li><a href="collection-1-faculty-review.html">Student name 2</a></li>
-                        <li><a href="collection-1-faculty-review.html">Student name 3</a></li>
-                        <li><a href="collection-1-faculty-review.html">Student name 4</a></li>
-                        <li><a href="collection-1-faculty-review.html">Student name 5</a></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="intro">
+        <h2>{{name}}</h2>
+        <div class="details">
+          <p class="lead">{{description}}</p>
+          <p>Add new items here as you see fit. You can add any work item to a collection later. Items are also automatically added here when you add them directly to a collection.</p>
         </div>
-        <ol class="categories">
-            {{#each categories}}
-            <li class="category">
-                <div class="details">
-                    <h3 class="name">{{order}}. {{name}}</h3>
-                    <p class="description">{{description}}</p>
-                    <p class="items-required">Items expected: {{numRequired}}</p>
-                </div>
-                <div class="options">
-                    <button class="btn-edit-category edit">Edit Category</button>
-                    <p class="btn-reorder">Drag to reorder</p>
-                </div>
-            </li>
-            {{/each}}
-        </ol>
-        <button class="btn-add-category ok">+ Category</button>
+        <div class="options">
+          <button class="btn-edit-collection edit" href="collection-1-public.html">Edit Collection</button>
+          <div class="select-list">
+            <p class="select-list__label">
+              Select a student:
+            </p>
+            <ul class="select-list__options">
+              <li><a href="collection-1-faculty-review.html">Student name 1</a></li>
+              <li><a href="collection-1-faculty-review.html">Student name 2</a></li>
+              <li><a href="collection-1-faculty-review.html">Student name 3</a></li>
+              <li><a href="collection-1-faculty-review.html">Student name 4</a></li>
+              <li><a href="collection-1-faculty-review.html">Student name 5</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <ol class="categories">
+        {{#each categories}}
+        <li class="category">
+          <div class="details">
+            <h3 class="name">{{order}}. {{name}}</h3>
+            <p class="description">{{description}}</p>
+            <p class="items-required">Items expected: {{numRequired}}</p>
+          </div>
+          <div class="options">
+            <button class="btn-edit-category edit">Edit Category</button>
+            <p class="btn-reorder">Drag to reorder</p>
+          </div>
+        </li>
+        {{/each}}
+      </ol>
+      <button class="btn-add-category ok">+ Category</button>
     </main>
     <nav></nav>
     <div class="tray"></div>
 
     <script src="js/vendor-min.js"></script>
-    <script src="js/scripts-min.js"></script>
-</body>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>

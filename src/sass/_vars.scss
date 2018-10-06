@@ -8,3 +8,9 @@ $color-orange: #FF9800;
 $color-ltgrey: #ECEFF1;
 
 $size-desktop:960px;
+
+$statuses: (
+  complete: $color-green,
+  in-progress: $color-orange,
+  not-started: $color-red
+);
