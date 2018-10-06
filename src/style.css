@@ -718,25 +718,29 @@ button, .btn {
 
 .category {
   border-bottom: 1px solid #ECEFF1; }
-  .category .details {
-    padding: 0 20px 20px;
-    box-sizing: border-box; }
   .category:last-child {
     border: none; }
-  .category .items-required {
-    font-weight: 600; }
-  .category .btn-reorder {
-    text-indent: -9999px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url("../images/icon-drag.png");
-    background-position: right center; }
-  .category .options {
-    padding-top: 22px;
-    box-sizing: border-box; }
   @media screen and (min-width: 960px) {
     .category {
       padding: 0 20px 20px; } }
+
+.category__btn-reorder {
+  text-indent: -9999px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-image: url("../images/icon-drag.png");
+  background-position: right center; }
+
+.category__details {
+  padding: 0 20px 20px;
+  box-sizing: border-box; }
+
+.category__items-required {
+  font-weight: 600; }
+
+.category__options {
+  padding-top: 22px;
+  box-sizing: border-box; }
 
 .collection-group {
   margin: 20px 0 15px; }

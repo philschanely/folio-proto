@@ -11,24 +11,24 @@
 
 .category {
   border-bottom: 1px solid $color-ltgrey;
-  .details {
-    padding: 0 20px 20px;
-    box-sizing: border-box;
-  }
   &:last-child { border: none; }
-  .items-required { font-weight: 600; }
-  .btn-reorder {
-    @include img-replace;
-    background-image: url("../images/icon-drag.png");
-    background-position: right center;
-  }
-  .options {
-    padding-top: 22px;
-    box-sizing: border-box;
-  }
   @media screen and (min-width: $size-desktop) {
     padding: 0 20px 20px;
   }
+}
+.category__btn-reorder {
+  @include img-replace;
+  background-image: url("../images/icon-drag.png");
+  background-position: right center;
+}
+.category__details {
+  padding: 0 20px 20px;
+  box-sizing: border-box;
+}
+.category__items-required { font-weight: 600; }
+.category__options {
+  padding-top: 22px;
+  box-sizing: border-box;
 }
 
 .collection-group {

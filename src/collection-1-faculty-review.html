@@ -44,10 +44,10 @@
       <ol class="categories">
         {{#each categories}}
         <li class="category">
-          <div class="details">
-            <h3 class="name">{{order}}. {{name}}</h3>
-            <p class="description">{{description}}</p>
-            <div class="requirement-status requirement-status--{{status.class}}">
+          <div class="category__details">
+            <h3 class="category__name">{{order}}. {{name}}</h3>
+            <p class="category__description">{{description}}</p>
+            <div class="category__requirement-status requirement-status--{{status.class}}">
               <p class="requirement-status__label">
                 Status: {{numProvided}} of {{numRequired}}
               </p>
@@ -61,7 +61,7 @@
               </p>
             </div>
           </div>
-          <ul class="work-tiles">
+          <ul class="category__work-tiles work-tiles">
             {{#each works}}
             <li class="work-tile">
               <a class="info" href="work-{{id}}.html">

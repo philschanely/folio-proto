@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-      <title>Folio: Student Portfolio Manager</title>
-      <meta charset="utf-8" />
-      <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Folio: Student Portfolio Manager</title>
+    <meta charset="utf-8" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
   </head>
   <body class="page-collection-faculty">
     <header>
@@ -36,14 +36,14 @@
       <ol class="categories">
         {{#each categories}}
         <li class="category">
-          <div class="details">
-            <h3 class="name">{{order}}. {{name}}</h3>
-            <p class="description">{{description}}</p>
-            <p class="items-required">Items expected: {{numRequired}}</p>
+          <div class="category__details">
+            <h3 class="category__name">{{order}}. {{name}}</h3>
+            <p class="category__description">{{description}}</p>
+            <p class="category__items-required">Items expected: {{numRequired}}</p>
           </div>
-          <div class="options">
+          <div class="category__options">
             <button class="btn-edit-category edit">Edit Category</button>
-            <p class="btn-reorder">Drag to reorder</p>
+            <p class="category__btn-reorder">Drag to reorder</p>
           </div>
         </li>
         {{/each}}
