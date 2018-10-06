@@ -63,30 +63,30 @@
   font-family: 'Source Sans Pro', sans-serif;
 }
 @mixin h1() {
-  font-size: 59px;
+  font-size: 5.9rem;
   font-weight: 600;
-  line-height: 74px;
+  line-height: 7.4rem;
   text-transform: uppercase;
 }
 
 @mixin h2() {
-  font-size: 23px;
-  line-height: 30px;
+  font-size: 2.3rem;
+  line-height: 3rem;
   font-weight: 600;
   @media screen and (min-width: $size-desktop) {
-    font-size: 37px;
-    line-height: 40px;
+    font-size: 3.7rem;
+    line-height: 4rem;
   }
 }
 
 @mixin h3() {
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
   margin: 15px 0 5px;
   @media screen and (min-width: $size-desktop) {
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 2.3rem;
+    line-height: 3rem;
   }
 }
 @mixin img-replace() {
@@ -96,11 +96,11 @@
 }
 @mixin input() {
   @include font-ssp;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: $color-grey;
   border: 1px solid $color-ltgrey;
   padding: 6px 8px;
-  line-height: 20px;
+  line-height: 2rem;
   display: block;
   width: 100%;
   box-sizing: border-box;

@@ -89,14 +89,14 @@ form li {
   margin-bottom: 10px; }
 
 form h2 {
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
   margin: 15px 0 5px; }
   @media screen and (min-width: 960px) {
     form h2 {
-      font-size: 23px;
-      line-height: 30px; } }
+      font-size: 2.3rem;
+      line-height: 3rem; } }
 
 form .options {
   display: flex;
@@ -110,40 +110,43 @@ form .options {
       margin-right: 0; }
 
 h1, .h1 {
-  font-size: 59px;
+  font-size: 5.9rem;
   font-weight: 600;
-  line-height: 74px;
+  line-height: 7.4rem;
   text-transform: uppercase; }
 
 h2, .h2 {
-  font-size: 23px;
-  line-height: 30px;
+  font-size: 2.3rem;
+  line-height: 3rem;
   font-weight: 600; }
   @media screen and (min-width: 960px) {
     h2, .h2 {
-      font-size: 37px;
-      line-height: 40px; } }
+      font-size: 3.7rem;
+      line-height: 4rem; } }
 
 h3, .h3 {
-  font-size: 17px;
+  font-size: 1.7rem;
   font-weight: 600;
-  line-height: 25px;
+  line-height: 2.5rem;
   margin: 15px 0 5px; }
   @media screen and (min-width: 960px) {
     h3, .h3 {
-      font-size: 23px;
-      line-height: 30px; } }
+      font-size: 2.3rem;
+      line-height: 3rem; } }
+
+html {
+  font-size: 10px; }
 
 img {
   max-width: 100%; }
 
 input {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #37474F;
   border: 1px solid #ECEFF1;
   padding: 6px 8px;
-  line-height: 20px;
+  line-height: 2rem;
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -156,35 +159,35 @@ input {
     width: auto; }
 
 li {
-  font-size: 14px;
-  line-height: 20px; }
+  font-size: 1.4rem;
+  line-height: 2rem; }
 
 @media screen and (min-width: 960px) {
   main {
     padding: 27px 20px 0 0; } }
 
 p {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
   margin: 10px 0;
   max-width: 760px; }
   p.lead {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     font-weight: 300;
     max-width: 760px; }
     @media screen and (min-width: 960px) {
       p.lead {
-        font-size: 23px;
-        line-height: 30px; } }
+        font-size: 2.3rem;
+        line-height: 3rem; } }
 
 textarea {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   color: #37474F;
   border: 1px solid #ECEFF1;
   padding: 6px 8px;
-  line-height: 20px;
+  line-height: 2rem;
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -210,9 +213,9 @@ footer {
   footer .brand-folio {
     display: block;
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 3rem;
     margin-bottom: 2px; }
   footer .brand-cu {
     text-indent: -9999px;
@@ -233,9 +236,9 @@ header {
   header .brand {
     text-align: center;
     color: white;
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 600;
-    line-height: 29px; }
+    line-height: 2.9rem; }
   header .tagline {
     display: none; }
   @media screen and (min-width: 960px) {
@@ -245,9 +248,9 @@ header {
       border: 1px solid #ECEFF1;
       background-color: transparent; }
       header .brand {
-        font-size: 59px;
+        font-size: 5.9rem;
         font-weight: 600;
-        line-height: 74px;
+        line-height: 7.4rem;
         text-transform: uppercase;
         background-color: #37474F;
         text-indent: -5px;
@@ -358,7 +361,7 @@ nav {
   max-width: 100%;
   margin-top: 0;
   padding: 5px;
-  font-size: 11px;
+  font-size: 1.1rem;
   background-color: #37474F;
   color: white;
   text-align: center;
@@ -373,8 +376,8 @@ nav {
   .public-header h1 {
     padding: 8px 10px 0;
     text-align: center;
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     font-weight: 400;
     text-transform: uppercase;
     color: white; }
@@ -383,7 +386,7 @@ nav {
         padding: 0;
         text-align: left;
         color: #37474F;
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: 300;
         text-transform: none; } }
 
@@ -405,14 +408,14 @@ nav {
     padding: 10px 20px;
     box-shadow: 0 0 10px fadeout(#37474F, 20%); }
     .tray .content h2 {
-      font-size: 17px;
+      font-size: 1.7rem;
       font-weight: 600;
-      line-height: 25px;
+      line-height: 2.5rem;
       margin: 15px 0 5px; }
       @media screen and (min-width: 960px) {
         .tray .content h2 {
-          font-size: 23px;
-          line-height: 30px; } }
+          font-size: 2.3rem;
+          line-height: 3rem; } }
 
 button, .btn {
   border: 1px solid #ECEFF1;
@@ -426,7 +429,7 @@ button, .btn {
   text-decoration: none;
   width: 100%;
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400; }
   button:hover, .btn:hover {
     background-color: #37474F;

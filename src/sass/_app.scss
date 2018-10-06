@@ -13,9 +13,9 @@ footer {
   .brand-folio {
     display: block;
     text-transform: uppercase;
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 3rem;
     margin-bottom: 2px;
   }
   .brand-cu {
@@ -38,9 +38,9 @@ header {
   .brand {
     text-align: center;
     color: white;
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: 600;
-    line-height: 29px;
+    line-height: 2.9rem;
   }
   .tagline { display: none; }
   @media screen and (min-width: $size-desktop) {
@@ -150,7 +150,7 @@ nav {
   max-width: 100%;
   margin-top: 0;
   padding: 5px;
-  font-size: 11px;
+  font-size: 1.1rem;
   background-color: $color-grey;
   color: white;
   text-align: center;
@@ -165,8 +165,8 @@ nav {
   h1 {
     padding: 8px 10px 0;
     text-align: center;
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     font-weight: 400;
     text-transform: uppercase;
     color: white;
@@ -174,7 +174,7 @@ nav {
       padding: 0;
       text-align: left;
       color: $color-grey;
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 300;
       text-transform: none;
     }

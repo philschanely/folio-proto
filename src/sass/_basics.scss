@@ -33,6 +33,10 @@ h3, .h3 {
   @include h3;
 }
 
+html {
+  font-size: 10px;
+}
+
 img { max-width: 100%; }
 
 input {
@@ -44,8 +48,8 @@ input {
 }
 
 li {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
 }
 
 main {
@@ -55,18 +59,18 @@ main {
 }
 
 p {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 1.4rem;
+  line-height: 2rem;
   margin: 10px 0;
   max-width: 760px;
   &.lead {
-    font-size: 17px;
-    line-height: 25px;
+    font-size: 1.7rem;
+    line-height: 2.5rem;
     font-weight: 300;
     max-width: 760px;
     @media screen and (min-width: $size-desktop) {
-      font-size: 23px;
-      line-height: 30px;
+      font-size: 2.3rem;
+      line-height: 3rem;
     }
   }
 }
