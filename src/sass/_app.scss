@@ -41,6 +41,7 @@ header {
     font-size: 2.3rem;
     font-weight: 600;
     line-height: 2.9rem;
+    padding-top: 5px;
   }
   .tagline { display: none; }
   @media screen and (min-width: $size-desktop) {
@@ -72,12 +73,12 @@ nav {
   .mobile-nav-link {
     display: block;
     @include img-replace();
-    background-image: url("../images/icon-menu.png");
+    background-image: url("../images/icon-hamburger.svg");
     height: 40px;
   }
   .nav-body {
     background-color: $color-ltgrey;
-    padding: 5px 20px;
+    padding: 0px 20px 10px;
     position: absolute;
     top: 80px;
     left: 0;
@@ -93,7 +94,7 @@ nav {
     border: none;
     padding: 0;
     width: auto;
-    background-image: url("../images/icon-x-dk.png");
+    background-image: url("../images/icon-close-dark.svg");
     background-color: transparent;
     display: none;
   }
@@ -106,6 +107,7 @@ nav {
       background-color: white;
       position: static;
       display: block;
+      padding: 5px 20px;
     }
     .btn-close { display: none; }
     .mobile-nav-link { display: none; }

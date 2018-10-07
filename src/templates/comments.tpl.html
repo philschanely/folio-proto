@@ -1,12 +1,12 @@
 <div class="content">
   <h2>Comments</h2>
-  <ul>
+  <ul class="comment-list">
     {{#each comments.comments}}
-    <li>
-      <em>Made {{date}} by {{user.name}}</em>
-      <p>{{comment}}</p>
+    <li class="comment">
+      <em class="comment__author">Posted {{date date}} by {{user.name}}</em>
+      <p class="comment__body">{{comment}}</p>
     </li>
     {{/each}}
   </ul>
-  <button class="ok">+ Comment</button>
+  <button class="btn--ok">+ Comment</button>
 </div>

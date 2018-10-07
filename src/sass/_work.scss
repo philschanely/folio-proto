@@ -13,47 +13,43 @@
   width: 170px;
   height: 155px;
   position: relative;
-  &.info, .info { @include grid-tile; }
   a { color: $color-grey; }
-  .title {
-    font-weight: 400;
-    display: block;
-  }
-  .date { display: block; }
-  .image {
-    max-width: 100%;
-    background-size: cover;
-    height: 95px;
-    img { display: none; }
-  }
-  .options {
-    position: absolute;
-    padding-top: 0;
-    top: 10px;
-    right: 10px;
+  &.work-tile__info,
+  .work-tile__info {
+    @include grid-tile;
   }
   @media screen and (min-width: $size-desktop) {
     padding: 10px;
     width: 260px;
     height: 220px;
-    .date { text-align: right; }
-    .image { height: 165px; }
-    .options {
+    .work-tile__date { text-align: right; }
+    .work-tile__image { height: 165px; }
+    .work-tile__options {
       top: 20px;
       right: 20px;
     }
   }
 }
-
-.work-tile-placeholder {
+.work-tile--placeholder {
   padding: 0;
-  width: 170px;
-  height: 155px;
   button { height: 100%; }
-  @media screen and (min-width: $size-desktop) {
-    width: 260px;
-    height: 220px;
-  }
+} 
+.work-tile__date { display: block; }
+.work-tile__image {
+  max-width: 100%;
+  background-size: cover;
+  height: 95px;
+  img { display: none; }
+}
+.work-tile__options {
+  position: absolute;
+  padding-top: 0;
+  top: 10px;
+  right: 10px;
+}
+.work-tile__title {
+  font-weight: 400;
+  display: block;
 }
 
 .work-tiles {

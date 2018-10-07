@@ -11,7 +11,7 @@
     </header>
     <main>
       <h2>Sophomore Review Portfolio</h2>
-      <div class="details">
+      <div class="intro__details">
         <p class="lead">{{description}}</p>
         <p>Add new items here as you see fit. You can add any work item to a collection later. Items are also automatically added here when you add them directly to a collection.</p>
       </div>
@@ -19,14 +19,14 @@
         {{#each categories}}
         <li class="category">
           <h3 class="category__name">{{order}}. {{name}}</h3>
-          <ul class="category__work-tiles work-tiles">
+          <ul class="work-tiles">
             {{#each works}}
             <li class="work-tile">
-              <a class="info" href="work-{{id}}-public.html">
-                <em class="title">{{title}}</em>
-                <span class="date">{{date date-created}}</span>
-                <figure class="image" style="background-image:url('{{image.url}}');">
-                  <img src="{{image.url}}" />
+              <a class="work-tile__info" href="work-{{id}}-public.html">
+                <em class="work-tile__title">{{title}}</em>
+                <span class="work-tile__date">{{date date-created}}</span>
+                <figure class="work-tile__image" style="background-image:url('{{image.url}}');">
+                  <img src="{{image.url}}" /> 
                 </figure>
               </a>
             </li>

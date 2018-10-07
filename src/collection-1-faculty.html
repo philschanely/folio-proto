@@ -13,12 +13,12 @@
     <main>
       <div class="intro">
         <h2>{{name}}</h2>
-        <div class="details">
+        <div class="intro__details">
           <p class="lead">{{description}}</p>
           <p>Add new items here as you see fit. You can add any work item to a collection later. Items are also automatically added here when you add them directly to a collection.</p>
         </div>
         <div class="options">
-          <button class="btn-edit-collection edit" href="collection-1-public.html">Edit Collection</button>
+          <button class="btn-edit-collection btn--edit" href="collection-1-public.html">Edit Collection</button>
           <div class="select-list">
             <p class="select-list__label">
               Select a student:
@@ -41,14 +41,14 @@
             <p class="category__description">{{description}}</p>
             <p class="category__items-required">Items expected: {{numRequired}}</p>
           </div>
-          <div class="category__options">
-            <button class="btn-edit-category edit">Edit Category</button>
+          <div class="category__options options">
+            <button class="btn-edit-category btn--edit">Edit Category</button>
             <p class="category__btn-reorder">Drag to reorder</p>
           </div>
         </li>
         {{/each}}
       </ol>
-      <button class="btn-add-category ok">+ Category</button>
+      <button class="btn-add-category btn--ok">+ Category</button>
     </main>
     <nav></nav>
     <div class="tray"></div>

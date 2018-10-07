@@ -14,39 +14,19 @@
     color: white;
   }
   &:focus { outline: none; }
-  &.ok {
-    border-color: $color-green;
-    color: $color-green;
-    &:hover {
-      background-color: $color-green;
-      color: white;
-    }
-  }
-  &.edit {
-    border-color: $color-orange;
-    color: $color-orange;
-    &:hover {
-      background-color: $color-orange;
-      color: white;
-    }
-  }
-  &.cancel {
-    border-color: $color-red;
-    color: $color-red;
-    &:hover {
-      background-color: $color-red;
-      color: white;
-    }
-  }
-  &.info {
-    border-color: $color-blue;
-    color: $color-blue;
-    &:hover {
-      background-color: $color-blue;
-      color: white;
+
+  @each $status, $color in $btn-statuses {
+    &.btn--#{$status} {
+      border-color: $color;
+      color: $color;
+      &:hover {
+        background-color: $color;
+        color: white;
+      }
     }
   }
 }
+
 @mixin btn-round($bg-color: white, $size: 40px) {
   display: block;
   width: $size;
@@ -59,9 +39,11 @@
   cursor: pointer;
   &:hover { background-color: $bg-color; }
 }
+
 @mixin font-ssp() {
   font-family: 'Source Sans Pro', sans-serif;
 }
+
 @mixin h1() {
   font-size: 5.9rem;
   font-weight: 600;
@@ -89,11 +71,13 @@
     line-height: 3rem;
   }
 }
+
 @mixin img-replace() {
   text-indent: -9999px;
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 @mixin input() {
   @include font-ssp;
   font-size: 1.4rem;

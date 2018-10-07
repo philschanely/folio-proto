@@ -14,3 +14,12 @@ $statuses: (
   in-progress: $color-orange,
   not-started: $color-red
 );
+
+$btn-statuses: (
+  ok: $color-green,
+  edit: $color-orange,
+  cancel: $color-red,
+  info: $color-blue
+);
+
+$approval-statuses: approved, unreviewed, denied, needs-attention;

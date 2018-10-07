@@ -1,11 +1,11 @@
-<li class="work-tile-placeholder">
+<li class="work-tile work-tile--placeholder">
   <button class="btn-add-work">+ Work</button>
 </li>
 {{#each works}}
-<li class="work-tile info">
-  <em class="title">{{title}}</em>
-  <span class="date">{{date date-created}}</span>
-  <figure class="image" style="background-image:url('{{image.url}}');">
+<li class="work-tile work-tile__info">
+  <em class="work-tile__title">{{title}}</em>
+  <span class="work-tile__date">{{date date-created}}</span>
+  <figure class="work-tile__image" style="background-image:url('{{image.url}}');">
     <img src="{{image.url}}" />
   </figure>
 </li>

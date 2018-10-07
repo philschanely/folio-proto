@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="34px" viewBox="0 0 38 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-comment-add</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Comment/Add" transform="translate(0.000000, 1.000000)">
+            <path d="M18.0819557,25.4545468 C15.7814829,28.5511539 12.4937434,30.8845676 8.6781655,32 L6.87755102,32 L6.87755102,31.7428651 C8.63467658,29.9678483 10.0196836,27.8305057 10.9076016,25.4545455 L9.00074125,25.4545455 C4.58205387,25.4545455 1,21.8749677 1,17.4529618 L1,8.00158365 C1,3.58243103 4.58343124,0 9.00074125,0 L28.9992587,0 C33.4179461,0 37,3.57957772 37,8.00158365 L37,17.4529618 C37,21.8721144 33.4165688,25.4545455 28.9992587,25.4545455 L18.0819571,25.4545455 Z" id="icon-bubble-green" stroke="#FFFFFF" stroke-width="1" fill="#00C853" fill-rule="evenodd"></path>
+            <text id="icon-plus-lt" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="23" font-weight="normal" fill="#FFFFFF">
+                <tspan x="13.2845" y="20">+</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="34px" viewBox="0 0 38 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.1 (67048) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-comment-unread</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon/Comment/Numbered" transform="translate(1.000000, 1.000000)">
+            <path d="M17.0819557,25.4545468 C14.7814829,28.5511539 11.4937434,30.8845676 7.6781655,32 L5.87755102,32 L5.87755102,31.7428651 C7.63467658,29.9678483 9.01968357,27.8305057 9.90760157,25.4545455 L8.00074125,25.4545455 C3.58205387,25.4545455 0,21.8749677 0,17.4529618 L0,8.00158365 C0,3.58243103 3.58343124,0 8.00074125,0 L27.9992587,0 C32.4179461,0 36,3.57957772 36,8.00158365 L36,17.4529618 C36,21.8721144 32.4165688,25.4545455 27.9992587,25.4545455 L17.0819571,25.4545455 Z" id="icon-bubble-orange" stroke="#FFFFFF" stroke-width="1" fill="#FF9800" fill-rule="evenodd"></path>
+            <text id="Num" font-family="SourceSansPro-Regular, Source Sans Pro" font-size="14" font-weight="normal" line-spacing="20"></text>
+        </g>
+    </g>
+</svg>

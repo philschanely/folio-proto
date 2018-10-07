@@ -60,6 +60,14 @@
   }
 }
 
+.comment {
+  margin-bottom: 20px; 
+}
+
+.comment__author {
+  font-style: italic;
+}
+
 .requirement-status {
   font-weight: 400;
   @include grid-status;

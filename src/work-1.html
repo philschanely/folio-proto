@@ -17,12 +17,12 @@
       </p>
       <div class="intro">
         <h2>{{title}}</h2>
-        <div class="details">
+        <div class="intro__details">
           <p class="lead">{{date date-created}}</p>
           <p>{{description}}</p>
         </div>
         <div class="options">
-          <button class="btn-status status-{{status.class}}" title="Status of work (click to change)">{{status.label}}</button>
+          <button class="btn-status btn-status--{{status.class}}" title="Status of work (click to change)">{{status.label}}</button>
           <button class="btn-comments comments-{{comments.class}}" title="Unread comments (click to view)">{{comments.numUnread}}</button>
         </div>
       </div>

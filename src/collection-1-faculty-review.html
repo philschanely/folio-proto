@@ -16,8 +16,8 @@
           &laquo; Back to Manage Collection
         </a>
         <h2>{{name}}</h2>
-        <a class="btn-public info" href="collection-1-public.html">Public view</a>
-        <div class="details">
+        <a class="btn btn-public btn--info" href="collection-1-public.html">Public view</a>
+        <div class="intro__details">
           <p class="lead">{{description}}</p>
           <p>
             Add new items here as you see fit. You can add any work item to a
@@ -61,19 +61,19 @@
               </p>
             </div>
           </div>
-          <ul class="category__work-tiles work-tiles">
+          <ul class="work-tiles">
             {{#each works}}
             <li class="work-tile">
-              <a class="info" href="work-{{id}}.html">
-                <em class="title">{{title}}</em>
-                <span class="date">{{date date-created}}</span>
-                <figure class="image" style="background-image:url('{{image.url}}');">
+              <a class="work-tile__info" href="work-{{id}}.html">
+                <em class="work-tile__title">{{title}}</em>
+                <span class="work-tile__date">{{date date-created}}</span>
+                <figure class="work-tile__image" style="background-image:url('{{image.url}}');">
                   <img src="{{image.url}}" />
                 </figure>
               </a>
-              <div class="options">
+              <div class="work-tile__options options">
                 <button
-                  class="btn-status status-{{status.class}}"
+                  class="btn-status btn-status--{{status.class}}"
                   title="Status of work (click to change)"
                 >
                   {{status.label}}
