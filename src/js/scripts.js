@@ -10,6 +10,7 @@ function setupNav() {
     var loc = window.location.pathname;
     if (href === loc) {
       $(o).closest('li').addClass('collection-group--active');
+      return false;
     }
   });
 }
