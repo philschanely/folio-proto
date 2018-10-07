@@ -1,11 +1,11 @@
 <div id="collections" class="nav-body">
   <ul class="collection-groups">
-    <li class="collection-group active">
-      <a class="label" href="index.html">All my work</a>
+    <li class="collection-group collection-group--active">
+      <a class="collection-group__label" href="index.html">All my work</a>
     </li>
     {{#each collectionGroups}}
     <li class="collection-group">
-      <span class="label">{{name}}</span>
+      <span class="collection-group__label">{{name}}</span>
       <ul>
         {{#each collections}}
         <li><a href="collection-{{id}}.html">{{name}}</a></li>

@@ -754,10 +754,6 @@ button, .btn {
 
 .collection-group {
   margin: 20px 0 15px; }
-  .collection-group .label {
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block; }
   .collection-group a {
     display: block;
     padding: 5px 10px 5px 20px;
@@ -768,14 +764,20 @@ button, .btn {
     color: #03A9F4; }
     .collection-group a:hover {
       background-color: #ECEFF1; }
-  @media screen and (min-width: 960px) {
-    .collection-group.active a {
-      background-color: #03A9F4;
-      background-image: url("../images/icon-indicator.svg");
-      background-repeat: no-repeat;
-      background-position: 7px center;
-      color: white;
-      font-weight: 400; } }
+
+@media screen and (min-width: 960px) {
+  .collection-group--active a {
+    background-color: #03A9F4;
+    background-image: url("../images/icon-indicator.svg");
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    color: white;
+    font-weight: 400; } }
+
+.collection-group__label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block; }
 
 .comment {
   margin-bottom: 20px; }

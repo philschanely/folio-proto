@@ -3,9 +3,15 @@ function toggleStatusPopout() {
 }
 
 function setupNav() {
-  if ($("body").hasClass("page-all-work")) {
-    // TODO: What to do on this page?
-  }
+  let $links = $('#collections a');
+  $('.collection-group--active').removeClass('collection-group--active');
+  $links.each(function(i, o) {
+    var href = '/' + $(o).attr('href');
+    var loc = window.location.pathname;
+    if (href === loc) {
+      $(o).closest('li').addClass('collection-group--active');
+    }
+  });
 }
 
 function snippinLoad(tplUrl, dataSrc, snippinSelector, callback) {
@@ -14,12 +20,12 @@ function snippinLoad(tplUrl, dataSrc, snippinSelector, callback) {
       var tpl = Handlebars.compile(tplSrc);
       var tplHTML = tpl(data);
       $(snippinSelector).html(tplHTML);
+
+      if (callback !== undefined) {
+        callback();
+      }
     });
   });
-
-  if (callback !== undefined) {
-    callback();
-  }
 }
 
 function snippin(tplSelector, dataSrc, snippinSelector, callback) {
@@ -28,11 +34,11 @@ function snippin(tplSelector, dataSrc, snippinSelector, callback) {
     var tpl = Handlebars.compile(tplSrc);
     var tplHTML = tpl(data);
     $(snippinSelector).html(tplHTML);
-  });
 
-  if (callback !== undefined) {
-    callback();
-  }
+    if (callback !== undefined) {
+      callback();
+    }
+  });
 }
 
 function showTray(tplUrl, dataUrl) {

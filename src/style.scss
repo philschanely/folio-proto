@@ -7,6 +7,7 @@
 @import 'buttons';
 @import 'work';
 
+
 // MISCELLANEOUS
 
 .category {
@@ -33,11 +34,6 @@
 
 .collection-group {
   margin: 20px 0 15px;
-  .label {
-    font-weight: 600;
-    margin-bottom: 5px;
-    display: block;
-  }
   a {
     display: block;
     padding: 5px 10px 5px 20px;
@@ -48,22 +44,26 @@
     color: $color-blue;
     &:hover { background-color: $color-ltgrey; }
   }
+}
+.collection-group--active a {
   @media screen and (min-width: $size-desktop) {
-    &.active a {
-      background-color: #03A9F4;
-      background-image: url("../images/icon-indicator.svg");
-      background-repeat: no-repeat;
-      background-position: 7px center;
-      color: white;
-      font-weight: 400;
-    }
+    background-color: #03A9F4;
+    background-image: url("../images/icon-indicator.svg");
+    background-repeat: no-repeat;
+    background-position: 7px center;
+    color: white;
+    font-weight: 400;
   }
+}
+.collection-group__label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .comment {
   margin-bottom: 20px;
 }
-
 .comment__author {
   font-style: italic;
 }
