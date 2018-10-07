@@ -18,7 +18,7 @@
 }
 .category__btn-reorder {
   @include img-replace;
-  background-image: url("../images/icon-drag.png");
+  background-image: url("../images/icon-drag.svg");
   background-position: right center;
 }
 .category__details {
@@ -51,7 +51,7 @@
   @media screen and (min-width: $size-desktop) {
     &.active a {
       background-color: #03A9F4;
-      background-image: url("../images/icon-indicator.png");
+      background-image: url("../images/icon-indicator.svg");
       background-repeat: no-repeat;
       background-position: 7px center;
       color: white;
@@ -61,7 +61,7 @@
 }
 
 .comment {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .comment__author {
@@ -96,7 +96,7 @@
   position: relative;
   width: 45%;
   &.reviewing .select-list__options { top: 60px; }
-  .select-list__label { background: right center no-repeat url("../images/icon-down.png"); }
+  .select-list__label { background: right center no-repeat url("../images/icon-down.svg"); }
   .select-list__item--selected {
     display: block;
     font-size: 23px;

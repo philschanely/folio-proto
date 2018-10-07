@@ -738,7 +738,7 @@ button, .btn {
   text-indent: -9999px;
   background-position: center center;
   background-repeat: no-repeat;
-  background-image: url("../images/icon-drag.png");
+  background-image: url("../images/icon-drag.svg");
   background-position: right center; }
 
 .category__details {
@@ -771,7 +771,7 @@ button, .btn {
   @media screen and (min-width: 960px) {
     .collection-group.active a {
       background-color: #03A9F4;
-      background-image: url("../images/icon-indicator.png");
+      background-image: url("../images/icon-indicator.svg");
       background-repeat: no-repeat;
       background-position: 7px center;
       color: white;
@@ -832,7 +832,7 @@ button, .btn {
   .select-list.reviewing .select-list__options {
     top: 60px; }
   .select-list .select-list__label {
-    background: right center no-repeat url("../images/icon-down.png"); }
+    background: right center no-repeat url("../images/icon-down.svg"); }
   .select-list .select-list__item--selected {
     display: block;
     font-size: 23px;
